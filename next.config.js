@@ -1,16 +1,15 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export',
   eslint: {
     ignoreDuringBuilds: true,
   },
   typescript: {
-    // !! WARN !!
-    // Dangerously allow production builds to successfully complete even if
-    // your project has type errors.
-    // !! WARN !!
     ignoreBuildErrors: true,
   },
-  images: { unoptimized: true },
+  images: {
+    unoptimized: true,
+  },
   devIndicators: false,
   allowedDevOrigins: [
     "*.macaly.dev",
@@ -18,6 +17,18 @@ const nextConfig = {
     "*.macaly-app.com",
     "*.macaly-user-data.dev",
   ],
+
+  webpack(config, { isServer }) {
+    if (!isServer) {
+      // Désactive complètement la minification CSS pendant le build
+      config.optimization.minimize = false;
+      if (config.optimization.minimizer) {
+        config.optimization.minimizer = [];
+      }
+    }
+    return config;
+  },
 };
+
 
 module.exports = nextConfig;
