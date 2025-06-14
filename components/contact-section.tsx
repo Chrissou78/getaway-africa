@@ -84,19 +84,19 @@ export default function ContactSection() {
     {
       icon: Phone,
       title: 'Phone',
-      details: '+27 (066) 244-5657',
+      details: '+1 (555) 123-4567',
       subtitle: 'Investment consultations'
     },
     {
       icon: MapPin,
       title: 'Headquarters',
-      details: 'Cape Town, South Africa',
-      subtitle: 'Travel across Africa'
+      details: 'Lagos, Nigeria',
+      subtitle: 'Regional offices across Africa'
     },
     {
       icon: Clock,
       title: 'Business Hours',
-      details: 'Mon-Fri 9AM-6PM SAST',
+      details: 'Mon-Fri 9AM-6PM WAT',
       subtitle: 'Extended hours for global clients'
     }
   ];
@@ -232,6 +232,7 @@ export default function ContactSection() {
                         </SelectTrigger>
                         <SelectContent>
                           <SelectItem value="renewable">Renewable Energy</SelectItem>
+                          <SelectItem value="agritech">Agri-tech</SelectItem>
                           <SelectItem value="logistics">Logistics</SelectItem>
                           <SelectItem value="infrastructure">Green Infrastructure</SelectItem>
                           <SelectItem value="multiple">Multiple Sectors</SelectItem>
@@ -308,7 +309,7 @@ export default function ContactSection() {
             </div>
 
             {/* Language Support */}
-            {/*<motion.div
+            <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: 0.6 }}
@@ -324,7 +325,7 @@ export default function ContactSection() {
                   </Badge>
                 ))}
               </div>
-            </motion.div>*/}
+            </motion.div>
 
             {/* Download Resources */}
             <motion.div
@@ -374,17 +375,17 @@ export default function ContactSection() {
             >
               <div className="space-y-2">
                 <Globe className="w-8 h-8 text-terracotta-600 mx-auto" />
-                <div className="text-lg font-outfit font-bold text-charcoal">25+</div>
+                <div className="text-lg font-outfit font-bold text-charcoal">45+</div>
                 <div className="text-xs text-charcoal/60">Countries</div>
               </div>
               <div className="space-y-2">
                 <Users className="w-8 h-8 text-gold-600 mx-auto" />
-                <div className="text-lg font-outfit font-bold text-charcoal">50+</div>
+                <div className="text-lg font-outfit font-bold text-charcoal">200+</div>
                 <div className="text-xs text-charcoal/60">Partners</div>
               </div>
               <div className="space-y-2">
                 <Building className="w-8 h-8 text-forest-600 mx-auto" />
-                <div className="text-lg font-outfit font-bold text-charcoal">$400M+</div>
+                <div className="text-lg font-outfit font-bold text-charcoal">$2.8B+</div>
                 <div className="text-xs text-charcoal/60">Facilitated</div>
               </div>
             </motion.div>

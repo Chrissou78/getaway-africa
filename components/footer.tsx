@@ -10,7 +10,8 @@ import {
   Phone, 
   MapPin, 
   Linkedin, 
-  Twitter,
+  Twitter, 
+  Facebook,
   ArrowRight,
   Heart
 } from 'lucide-react';
@@ -55,8 +56,9 @@ export default function Footer() {
   };
 
   const socialLinks = [
-    { icon: Linkedin, href: 'https://www.linkedin.com/in/francesregina/', label: 'LinkedIn' },
-    { icon: Twitter, href: '#', label: 'Twitter' }
+    { icon: Linkedin, href: '#', label: 'LinkedIn' },
+    { icon: Twitter, href: '#', label: 'Twitter' },
+    { icon: Facebook, href: '#', label: 'Facebook' }
   ];
 
   const handleLinkClick = (href: string) => {
@@ -149,11 +151,11 @@ export default function Footer() {
                 </div>
                 <div className="flex items-center text-white/60">
                   <Phone className="w-4 h-4 mr-3" />
-                  +27 (066) 244-5657
+                  +1 (555) 123-4567
                 </div>
                 <div className="flex items-center text-white/60">
                   <MapPin className="w-4 h-4 mr-3" />
-                  Cape Town, SA
+                  Lagos, Nigeria
                 </div>
               </div>
             </motion.div>

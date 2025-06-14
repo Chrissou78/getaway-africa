@@ -16,9 +16,9 @@ export default function HeroSection() {
   };
 
   const stats = [
-    { icon: TrendingUp, value: '$400M+', label: 'Investment Facilitated' },
-    { icon: Globe, value: '25+', label: 'African Markets' },
-    { icon: Users, value: '50+', label: 'Global Partners' },
+    { icon: TrendingUp, value: '$2.8B+', label: 'Investment Facilitated' },
+    { icon: Globe, value: '45+', label: 'African Markets' },
+    { icon: Users, value: '200+', label: 'Global Partners' },
   ];
 
   return (

@@ -143,9 +143,9 @@ export default function AboutSection() {
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
-              { number: '25+', label: 'Countries Served' },
-              { number: '50+', label: 'Partnerships Formed' },
-              { number: '$400M+', label: 'Investment Facilitated' },
+              { number: '45+', label: 'Countries Served' },
+              { number: '200+', label: 'Partnerships Formed' },
+              { number: '$2.8B+', label: 'Investment Facilitated' },
               { number: '50+', label: 'Projects Completed' },
             ].map((stat, index) => (
               <motion.div

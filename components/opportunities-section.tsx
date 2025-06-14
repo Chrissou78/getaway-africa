@@ -25,6 +25,14 @@ export default function OpportunitiesSection() {
       color: 'forest'
     },
     {
+      icon: Wheat,
+      title: 'Agri-tech',
+      description: 'Smart farming, processing, and supply chain innovations',
+      projects: '28+ Active Projects',
+      investment: '$850M+ Available',
+      color: 'gold'
+    },
+    {
       icon: Truck,
       title: 'Logistics',
       description: 'Infrastructure, warehousing, and transportation networks',
@@ -52,6 +60,16 @@ export default function OpportunitiesSection() {
       description: 'Multi-country solar infrastructure project connecting 3 million households to clean energy.',
       status: 'Investment Ready',
       highlights: ['Government backing', 'EU co-financing', 'Local partnerships secured']
+    },
+    {
+      title: 'Smart Agriculture Platform',
+      location: 'Kenya, Tanzania',
+      sector: 'Agri-tech',
+      investment: '$125M',
+      timeline: 'Q3 2025 - Q2 2026',
+      description: 'AI-powered farming platform serving 50,000+ smallholder farmers with IoT solutions.',
+      status: 'Due Diligence',
+      highlights: ['Proven technology', 'Strong user base', 'Scalable model']
     },
     {
       title: 'Cross-Border Logistics Hub',
@@ -129,7 +147,7 @@ export default function OpportunitiesSection() {
         </motion.div>
 
         {/* Sectors Overview */}
-        <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-6 mb-20">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
           {sectors.map((sector, index) => {
             const colors = getColorClasses(sector.color);
             
